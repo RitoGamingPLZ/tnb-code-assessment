@@ -15,6 +15,15 @@ export default {
         "neutral-100": "#ECEDEE",
         "neutral-50": "#F6F6F6",
       },
+      borderRadius: {
+        4: "4px",
+      },
+      borderWidth: {
+        6: "6px",
+      },
+      spacing: {
+        17.5: "70px",
+      },
     },
   },
   plugins: [],
