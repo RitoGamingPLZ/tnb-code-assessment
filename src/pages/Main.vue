@@ -200,8 +200,8 @@
         </div>
       </div>
     </footer>
-    <div class="absolute inset-0 grid grid-cols-12 px-17.5 gap-5 pointer-events-none">
+    <!-- <div class="absolute inset-0 grid grid-cols-12 px-17.5 gap-5 pointer-events-none">
       <div v-for="i in 12" :key="i" class="bg-red-600/10 col-span-1 h-full"></div>
-    </div>
+    </div> -->
   </div>
 </template>
