@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import banner from '@/assets/images/banner-1.png';
+import thumbnail from '@/assets/images/thumbnail-1.png';
+import background from '@/assets/images/background-1.png';
 </script>
 
 <template>
@@ -11,7 +14,7 @@
     <main>
       <!-- banner section -->
       <section class="w-full">
-        <img class="w-full" src="src/assets/images/banner-1.png" />
+        <img class="w-full" :src="banner" />
       </section>
 
       <!-- Introduction section -->
@@ -84,7 +87,7 @@
           </div>
           <div class=" grid grid-cols-12 gap-5">
             <article v-for="i in 4" :key="i" class="col-span-3 flex flex-col aspect-[0.8] bg-neutral-50">
-              <img src="src/assets/images/thumbnail-1.png" class="aspect-video w-full" />
+              <img :src="thumbnail" class="aspect-video w-full" />
               <div class="flex-1 p-5">
                 <p class="font-semibold">Course for Operators #1</p>
               </div>
@@ -117,7 +120,7 @@
           </div>
           <div class="grid grid-cols-12 gap-5">
             <article v-for="i in 2" :key="i" class="col-span-6 flex  aspect-[2.48] bg-neutral-50">
-              <img src="src/assets/images/thumbnail-1.png" class="aspect-[0.942] h-full" />
+              <img :src="thumbnail" class="aspect-[0.942] h-full" />
               <div class="flex-1 p-5">
                 <p class="font-semibold">Course for Operators #1</p>
               </div>
@@ -156,7 +159,7 @@
       </section>
 
       <!-- Member Section -->
-      <section class="relative px-17.5 space-y-10 py-12 bg-[url('src/assets/images/background-1.png')] bg-cover">
+      <section class="relative px-17.5 space-y-10 py-12 bg-[url('assets/images/background-1.png')] bg-cover">
         <div class="grid grid-cols-12 gap-5">
           <h3 class="col-span-8 col-start-3 text-white text-3xl text-center">
             TEN training is already helping operators, communities, and destinations like you
@@ -166,7 +169,7 @@
         <!-- Member Block -->
         <div class="grid grid-cols-12 gap-5">
           <article v-for="i in 3" :key="i" class="col-span-4 flex flex-col aspect-[0.83] bg-neutral-50 p-5 space-y-5">
-            <img src="src/assets/images/background-1.png" class="mx-auto w-36 aspect-square rounded-full">
+            <img :src="background" class="mx-auto w-36 aspect-square rounded-full">
             <p class="text-center flex-1">
               When I read through best practices, I see a checklist of what I have to do to have a good visitor experience in terms of a community, destination or route. That’s a really powerful thing.
             </p>
